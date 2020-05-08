@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: twBold;
+    src: url('./twbold.TTF');
+}
+@font-face {
+    font-family: twStandard;
+    src: url('./twStandar.otf');
+}
+.Container{
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+/* ini css untuk actionbar */
+.actionBar{
+    width: 375px;
+    height: auto;
+    background-color: #F9F9F9;
+    position: relative;
+    padding: 15px 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+}
+.app-names{
+    font-size: 20px;
+    font-style: bold;
+    color: #000000;
+    padding-left: 32px;
+    font-family: twBold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn_add{
+    width: 63px;
+    height: 20px;
+    margin-right: 44px;
+    position: absolute;
+    top: 16px;
+    right: 0px;
+    color: white;
+    background-color: #4CA1AF;
+    border-radius: 10px ;
+    font-family: twStandard;
+    border: 2px solid #4CA1AF;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ini css untuk main */
+.content-list{
+    width: 375px;
+    height: 350px;
+    margin-top: 25px;
+    max-height: 350px;
+    background-color: #fff;
+    overflow: auto;
+    font-family: twStandard;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-list::-webkit-scrollbar{
+    display: none;
 }
