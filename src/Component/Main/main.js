@@ -1,14 +1,16 @@
 import React from 'react';
-import './main.module.css'
+import CardView from './main.cardView';
 
 class Main extends React.Component {
 
   render(){
-    // const name = " Kitabisa.com "
+    const titleBook = "Roboto Restaurant"
+    const description = "Shinjuku is a special ward in Tokyo, Japan. It is a major commercial and "
+    
 
     return(
     <div className="content-list">
-      <div> Ini Main nya </div>
+      <CardView title={titleBook} desc={description}/> 
     </div>
     );
   }

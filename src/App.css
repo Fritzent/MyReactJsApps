@@ -36,7 +36,7 @@
     margin-right: 44px;
     position: absolute;
     top: 16px;
-    right: 0px;
+    right: -22px;
     color: white;
     background-color: #4CA1AF;
     border-radius: 10px ;
@@ -57,4 +57,69 @@
 }
 .content-list::-webkit-scrollbar{
     display: none;
+}
+
+.cardview-list{
+    width: 299px;
+    height: 160px;
+    margin-left: 32px;
+    margin-right: 44px;
+    padding-top: 17px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+}
+
+.cardview-list .title-book{
+    font-family: twBold;
+    font-size: 18px;
+}
+.cardview-list .img-book{
+    width: 100px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-image: url('./shinjuku.jpg');
+    background-repeat: no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+.cardview-list .desc-book{
+    width: 166px;
+    height: 60px;
+    font-family: twStandard;
+    color: #2B2B2B;
+    position: relative;
+    top: -40%;
+    right: -38%;
+    text-align: justify;
+    line-height: 22px;
+}
+.cardview-list .btn_delete{
+    width: 63px;
+    height: 20px;
+    margin-top: -10%;
+    margin-right: 28%;
+    float: right;
+    color: #FF5F6D;
+    background-color: #FFCFD3;
+    border-radius: 10px ;
+    font-family: twStandard;
+    border: 2px solid #FFCFD3;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+}
+.cardview-list .btn_update{
+    width: 63px;
+    height: 20px;
+    margin-top: -10%;
+    margin-right: 12px;
+    float: right;
+    color: #FFC371;
+    background-color: #F9F9F9;
+    border-radius: 10px ;
+    font-family: twStandard;
+    border: 2px solid #F9F9F9;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
 }
