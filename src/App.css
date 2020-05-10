@@ -8,11 +8,16 @@
 }
 .Container{
     width: 375px;
-    height: 812px;
+    height: auto;
     margin: 0 auto;
     background-color: white;
-    
+    overflow-y: hidden;
+    overflow-x: hidden; 
 }
+::-webkit-scrollbar{
+    width: unset;
+}
+
 /* ini css untuk actionbar */
 .actionBar{
     width: 375px;
@@ -45,18 +50,67 @@
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
 }
 
+/* ini bagian modal */
+.modal-container{
+    width: 320px;
+    height: 185px;
+    position: fixed;
+    padding-bottom: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    z-index: 10px;
+    font-family: twBold;
+    font-size: 18px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+}
+.modal-body{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 17px;
+}
+.modal-container .modal-body .txt-Title{
+    margin-bottom: 10px;
+}
+.modal-container .modal-body .txt-Desc{
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.modal-container .modal-body .input {
+    width: 275px;
+    height: 25px;
+    border: none;
+    padding-left: 16px;
+    border-radius: 10px;
+    font-family: twStandard;
+}
+.modal-container .modal-body .button{
+    width: 73px;
+    height: 30px;
+    margin-top: 21px;
+    margin-right: 12px;
+    border: none;
+    float: right;
+    background-color: #F46B45;
+    border-radius: 10px;
+    color: white;
+}
+.modal-container .modal-body .button:hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+}
+
+
 /* ini css untuk main */
 .content-list{
     width: 375px;
-    height: 350px;
-    margin-top: 25px;
-    max-height: 350px;
+    height: 185px;
+    margin-top: 20px;
     background-color: #fff;
     overflow: auto;
     font-family: twStandard;
-}
-.content-list::-webkit-scrollbar{
-    display: none;
+    display: block;
 }
 
 .cardview-list{
@@ -90,18 +144,18 @@
     width: 166px;
     height: 60px;
     font-family: twStandard;
+    float: right;
+    margin-top: -20%;
+    margin-right: 5%;
     color: #2B2B2B;
-    position: relative;
-    top: -40%;
-    right: -38%;
     text-align: justify;
     line-height: 22px;
 }
 .cardview-list .btn_delete{
     width: 63px;
     height: 20px;
-    margin-top: -10%;
-    margin-right: 28%;
+    margin-top: 10%;
+    margin-right: 25%;
     float: right;
     color: #FF5F6D;
     background-color: #FFCFD3;
@@ -113,8 +167,8 @@
 .cardview-list .btn_update{
     width: 63px;
     height: 20px;
-    margin-top: -10%;
-    margin-right: 12px;
+    margin-top: 10%;
+    margin-right: -60%;
     float: right;
     color: #FFC371;
     background-color: #F9F9F9;
